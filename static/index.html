@@ -1,0 +1,11 @@
+<div id="templatemo_content" ng-controller="RestaurantController">
+    <div id="templatemo_content_right">
+        <div class="templatemo_product_box" ng-repeat="rt in restaurant">
+            <h1>{[{ rt.name }]} <span> - {[{ rt.landmark }]}</span></h1>
+            <div class="product_info">
+                <p>{[{ rt.address }]}</p>
+                <div class="buy_now_button"><a ui-sref="comments({id:rt.id})">Comment</a></div>
+            </div>
+        </div>
+    </div> <!-- end of content right -->
+</div>
